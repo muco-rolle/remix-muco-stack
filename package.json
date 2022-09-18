@@ -17,6 +17,7 @@
 		"test:cov": "vitest --coverage",
 		"type-check": "tsc -b",
 		"validate": "run-p \"test -- --run\" lint type-check",
+		"prepare": "husky install",
 		"commit": "git-cz"
 	},
 	"prettier": {
