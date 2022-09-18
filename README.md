@@ -1,15 +1,4 @@
-![GitHub-Mark-Light](https://raw.githubusercontent.com/dev-xo/dev-xo/main/remix-muco-stack/assets/images/light-logo-v1.png#gh-light-mode-only)
-![GitHub-Mark-Dark ](https://github.com/dev-xo/dev-xo/blob/main/remix-muco-stack/assets/images/dark-logo-v1.png#gh-dark-mode-only)
-
-<p align="center">
-  <p align="center">
-    <a href="https://remix-muco-stack.fly.dev">Live Demo</a>
-    ·
-    <a href="https://twitter.com/DEV_XO1">Twitter</a>
-    <br/>
-    A robust create-remix app, that applies best practices into a clean, batteries included template. PostgreSQL version. Deploys to Fly.io
-  </p>
-</p>
+# Remix Muco Stack
 
 ## 💿 Features
 
@@ -20,31 +9,23 @@ This Stack has been created with two main purposes: **simplicity and solidity.**
 - Production-Ready with [PostgreSQL Database](https://www.postgresql.org/)
 - [GitHub Actions](https://github.com/features/actions) for Deploy on merge to Production and Staging environments.
 - Healthcheck Endpoint for [Fly backups Region Fallbacks.](https://fly.io/docs/reference/configuration/#services-http_checks)
-- Styling with [Tailwind.css](https://tailwindcss.com/) + [Tailwind Prettier-Plugin.](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
-- End-to-End testing with [Cypress.](https://www.cypress.io/how-it-works)
+- Styling with [Chakra UI](https://chakra-ui.com/)
 - Unit Testing with [Vitest](https://vitest.dev) and [Testing Library.](https://testing-library.com)
-- Local third party request mocking with [MSW.](https://mswjs.io)
 - Linting with [ESLint.](https://eslint.org/)
 - Code formatting with [Prettier.](https://prettier.io/)
 - Static Types with [TypeScript.](https://www.typescriptlang.org/)
-- Support for Javascript developers with continuous updates over time based on `remix.init`.
 
-### We've got a 🐳 [SQLite](https://github.com/dev-xo/remix-muco-stack) version also.
-
-Would you like to change something? Fork it, change it and use `npx create-remix --template your/repo`!<br/>
 Learn more about [Remix Stacks](https://remix.run/stacks).
 
 ## 🔋 Quickstart
 
 ```sh
 # Initialize the following template into your workspace:
-npx create-remix --template dev-xo/remix-muco-stack
+npx create-remix --template muco-rolle/remix-muco-stack
 
-# Setup database: (Choose between the following 2 options)
-npm run docker || 'Manually set your Postgres database keys into the .env file.'
+# Setup database:
+Manually set your Postgres database keys into the .env file.
 ```
-
-> **Note:** The npm script will complete while Docker sets up the container in the background. Ensure that Docker has finished and your container is running before proceeding.
 
 ```sh
 # Seed your database:
@@ -129,14 +110,6 @@ Anything in the `dev` branch will be deployed to staging.
 
 ## 🧩 Testing
 
-### Cypress
-
-We use Cypress for our End-to-End tests in this project. You'll find those in the `cypress` directory. As you make changes, add to an existing file or create a new file in the `cypress/e2e` directory to test your changes.
-
-We use [`@testing-library/cypress`](https://testing-library.com/cypress) for selecting elements on the page semantically.
-
-To run these tests in development, run `npm run test:e2e:dev` which will start the dev server for the app as well as the Cypress client. Make sure the database is running in docker as described above.
-
 ### Vitest
 
 For lower level tests of utilities and individual components, we use `vitest`. We have DOM-specific assertion helpers via [`@testing-library/jest-dom`](https://testing-library.com/jest-dom).
@@ -154,19 +127,3 @@ This project uses ESLint for linting. That is configured in `.eslintrc.js`.
 We use [Prettier](https://prettier.io/) for auto-formatting in this project. It's recommended to install an editor plugin to get auto-formatting on save. There's also a `npm run format` script you can run to format all files in the project.
 
 Also feel free to update prettier settings from `.package-json` with your preferred configuration.
-
-## 👥 Contributing
-
-Contributions are Welcome! Jump in and help us improve this Community Template over time!
-
-- [Contributing Guide](https://github.com/dev-xo/remix-muco-stack/blob/main/CONTRIBUTING.md) Docs.
-- [Public Project Roadmap](https://github.com/users/dev-xo/projects/6) Check our TODOs, Fixes and Updates.
-
-## 🍪 Support
-
-If you found the template useful, feel free to [Star ⭐ It](https://github.com/dev-xo/remix-muco-stack)!
-It helps the repository grow and gives me motivation to keep working on it. Thanks you!
-
-### ️Acknowledgments
-
-A big shout out to [@MichaelDeBoey](https://github.com/MichaelDeBoey). He's doing an amazing job on `remix.init` and contributing to Remix community!
