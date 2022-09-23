@@ -1,6 +1,6 @@
 import { Outlet } from '@remix-run/react'
 import { Document } from '~/config/root'
-export { CatchBoundary, ErrorBoundary, meta } from '~/config/root'
+export { meta } from '~/config/root'
 
 export default function App() {
 	return (
@@ -9,3 +9,5 @@ export default function App() {
 		</Document>
 	)
 }
+
+export const unstable_shouldReload = () => false
